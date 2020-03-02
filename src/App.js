@@ -10,8 +10,8 @@ class App extends React.Component {
         this.state = { displayInfo: [] }
     }
 
-    async loadApi(resource = 'films') {
-        const resp = await axios.get(`https://swapi.co/api/${resource}/`);
+    async loadApi() {
+        const resp = await axios.get(`https://swapi.co/api/films/`);
         this.setState({ displayInfo: resp.data.results })
     }
 

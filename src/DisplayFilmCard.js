@@ -5,9 +5,9 @@ const filmCard = (card) => {
         <div key={card.episode_id} className='FilmCard'>
             <h2>{card.title} </h2>
             <h4>{card.opening_crawl} </h4>
-            <div>Director: {card.director} </div>
-            <div>Producer: {card.producer} </div>
-            <div>Release Date: {card.release_date} </div>
+            <div>Director: {card.director}</div>
+            <div>Producer: {card.producer}</div>
+            <div>Release Date: {card.release_date}</div>
             <br />
         </div>
     );
